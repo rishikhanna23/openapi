@@ -10,6 +10,7 @@ const mongoose=require("mongoose");
 // search git for github/gitignore
 // git init
 // git commit  -m   "Initial Commit"
+//git log
 
 const app=express();
 
