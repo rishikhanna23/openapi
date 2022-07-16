@@ -11,6 +11,9 @@ const mongoose=require("mongoose");
 // git init
 // git commit  -m   "Initial Commit"
 //git log
+// git remote add origin https://github.com/rishikhanna23/openapi.git
+// git push -u  origin master
+
 
 const app=express();
 
