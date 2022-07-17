@@ -13,8 +13,45 @@ const mongoose=require("mongoose");
 //git log
 // git remote add origin https://github.com/rishikhanna23/openapi.git
 // git push -u  origin master
+//ec2-user@3.83.80.122
+//load ppk key
+//  sudo su
+//yum update -y
+//yum  install httpd -y
+//sudo yum install -y gcc-c++ make
+//curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
+//sudo yum install -y nodejs
+//node -v
+//sudo iptables -t nat -A PREROUTING -p tcp --dport  80 -j REDIRECT  --to-ports 3000
 
 
+
+
+
+//cd /etc/yum.repos.d
+//sudo touch mongo-org-5.0.repo
+//sudo su
+//[mongodb-org-5.0]
+//name=MongoDB Repository
+//baseurl=https://repo.mongodb.org/yum/amazon/2/mongodb-org/5.0/x86_64/
+//gpgcheck=1
+//enabled=1
+//gpgkey=https://www.mongodb.org/static/pgp/server-5.0.asc
+// cat mongo-org-5.0.repo
+
+//yum install -y mongodb-org
+//cd /
+//mkdir data
+// cd data
+//mkdir db
+//cd /home/ec2-user/
+//service mongod start
+// nmp install mongoose ejs
+//mongo
+
+//db.createUser({user:"my_user", pwd:"my_pwd", roles:["dbOwner"]})
+//exit
+//node mongo
 const app=express();
 
 app.set('view-engine','ejs');
@@ -25,9 +62,13 @@ app.use(bodyparser.urlencoded({
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/openAPI",
-{useNewUrlParser:true}
-);
+//mongoose.connect("mongodb://localhost:27017/openAPI",
+//{useNewUrlParser:true}
+//);
+
+//mongoose.connect("mongodb://my_user:my_pwd@localhost:27017/openAPI",
+//{useNewUrlParser:true}
+//);
 
 const openApiSchema={
 
